@@ -1,6 +1,10 @@
 class RAG():
     '''
-    This is a class for the retrieve procedure of similar docs
+    This is a class to build a Retrieval-Augmented Generation framework.
+    Two basic components of this architecture is retrieve method and the generation of response by a Large Language Model.
+    Retrieval is the procedure where similar to user's querry docs are retrieved from a database.
+    Generation of a response is the procedure where user's query and the related docs are sent to LLM for a contexualized response.
+    
     '''
     
     def __init__(self, *, db_client, llm_client, collection_name):
