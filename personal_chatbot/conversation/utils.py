@@ -4,6 +4,7 @@ def generate_embedding(client, model_name, input_text):
     Embeddings are defined by model_name
     '''
     response = client.embeddings.create(input=[input_text], model=model_name).data[0].embedding
+    
     embedding = response
     return embedding
     

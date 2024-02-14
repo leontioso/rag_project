@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>Personal ChatBot</title>
+  <link rel="stylesheet" href="{% static "conversation/index.css" %}">
+</head>
+
+<body>
+  <section class="frmChat">
+    <header class="frmChat-header">
+      <div class="frmChat-header-title"><b>Personal ChatBot:</b> You can ask Personal Chat anything for a contextualized answer
+      </div>
+    </header>
+
+    <main class="frmChat-chat">
+
+    </main>
+
+    <form class="frmChat-inputarea">
+      <input type="text" class="frmChat-input" placeholder="Enter your message...">
+      <button type="submit" class="frmChat-send-btn">Send</button>
+    </form>
+  </section>
+
+  <script src= "{% static "conversation/app.js" %}"></script>
+</body>
+
+</html>

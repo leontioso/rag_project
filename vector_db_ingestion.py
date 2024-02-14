@@ -8,7 +8,7 @@ from utils import generate_embedding
 from openai import AzureOpenAI
 
 # Retrieval of environmental variables
-load_dotenv()
+load_dotenv(override=True)
 api_key = os.environ['AZURE_API_KEY']
 azure_endpoint = os.environ['AZURE_ENDPOINT']
 api_version = os.environ['API_VERSION']
